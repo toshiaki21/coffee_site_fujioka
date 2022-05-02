@@ -1,0 +1,520 @@
+header{
+	width: 100%;
+  height: 60px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.header-left{
+  width: 180px;
+  height: 180px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.header-right ul{
+  display: flex;
+  color: black;
+  margin-right: 50px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.header-right li{
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+.main-title{
+	text-align: center;
+	width: 300px;
+  font-size: 50px;
+  font-weight: 900;
+	position: absolute;
+	top: 430px;
+	left: 600px;
+	color: rgb(47, 45, 45);
+	background-color:blanchedalmond;
+	font-family: 'Oswald', sans-serif;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-family: 'Square Peg', cursive;
+}
+
+/* FafeIn */
+@keyframes fadeInAnime{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.main-title{
+  animation-name: fadeInAnime;
+  animation-fill-mode:backwards;
+  animation-duration:5s;
+  /* animation-iteration-count:infinite; */
+  animation-timing-function:ease;
+  animation-delay: .8s;
+  animation-direction:normal;
+  }
+
+h1{
+	font-size: 40px;
+	margin: 20px 0px 0px 20px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.sub-title{
+	font-size: 40px;
+	text-align: center;
+	margin: 50px 0px 30px 0px ;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	text-decoration: underline;
+	text-decoration-color: black;
+	border-width: 1px;
+}
+
+h2{
+	font-size: 40px;
+	text-align: center;
+	margin: 50px 0px 30px 0px ;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.member-profile{
+	background-color: gray;
+	color: white;
+}
+
+
+.profile{
+	width: 200px;
+	height: 200px;
+}
+
+.member{
+	display: flex;
+	justify-content:center;
+	margin: 30px 0px 30px 0px;
+	background-color: gray;
+	color: white;
+}
+
+.intro{
+	display: flex;
+	margin-right: 20px;
+}
+
+.us{
+	display: block;
+	margin-left: 20px;
+}
+
+
+.talk{
+	display: flex;
+	margin: 20px 0px 0px 20px;
+	align-items: center;
+}
+
+.talk-pic{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%; 
+	border: solid 1px gray;
+}
+
+.talking{
+	margin-left: 10px;
+}
+
+
+.coffee-pic{
+	width: 600px;
+	height: auto;
+	border-radius: 10px;
+}
+
+.process{
+	display: flex;
+	margin-left: 30px;
+}
+
+.process ul{
+	margin-left: 30px;
+	font-size: 20px;
+}
+
+.description{
+	margin-left: 30px;
+}
+
+h4{
+	margin-left: 30px;
+}
+
+.store-pic{
+	width: 400px;
+	height: auto;
+	margin-bottom: 20px;
+}
+.mug{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.mug .fa-solid{
+	color: brown;
+}
+
+
+.fa-solid{
+	color: blue;
+}
+
+
+a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+a::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: gray;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+
+.insta{
+	width: 300px;
+	height: 500px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.post{
+margin: 0px 50px 0px 85px;
+}
+
+.cafe{
+	background-color: gray;
+	color: whitesmoke;
+}
+
+footer{
+  background-color: gray;
+  height: 60px;
+  margin-top: 50px;
+  text-align: center;
+	font-size: 18px;
+  padding-top: 20px;
+  color: white;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+/* スライダー */
+.cp_cssslider {
+	width: 1200px;
+	height: 675px;
+	overflow: hidden;
+	margin: 2em auto;
+	box-shadow:0px 0px 5px 0px rgba(0,0,0,0.5);
+	position: relative;
+}
+
+.cp_slide_item {
+	width: 1200px;
+	height: 675px;
+	float: left;
+	position: relative;
+}
+.cp_slidewrapper {
+	width: 500%;/* slideの枚数×100% */
+	position: relative;
+	left: 0;
+	animation: slider 18s infinite ease;/* スピード */
+}
+@-webkit-keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	20% {
+	-webkit-transform: translateX(-1200px);
+	transform: translateX(-4800px);
+	}
+	40% {
+	-webkit-transform: translateX(-2400px);
+	transform: translateX(-3600px);
+	}
+	60% {
+	-webkit-transform: translateX(-3600px);
+	transform: translateX(-2400px);
+	}
+	80% {
+	-webkit-transform: translateX(-4800px);
+	transform: translateX(-1200px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
+@keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	20% {
+	-webkit-transform: translateX(-1200px);
+	transform: translateX(-1200px);
+	}
+	40% {
+	-webkit-transform: translateX(-2400px);
+	transform: translateX(-2400px);
+	}
+	60% {
+	-webkit-transform: translateX(-3600px);
+	transform: translateX(-3600px);
+	}
+	80% {
+	-webkit-transform: translateX(-4800px);
+	transform: translateX(-4800px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
+
+
+
+/* レスポンシブ */
+/* レスポンシブ対応 */
+@media screen and (max-width: 780px){
+header{
+	position:sticky;
+  top:0;
+	width: 100%;
+	height: 40px;
+}
+
+	.header-left{
+	width: 100px;
+	height: auto;
+}
+
+.header-right ul{
+  display: flex;
+  color: black;
+  margin-right: 20px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.header-right li{
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* スライダー */
+.cp_cssslider {
+	width: 500px;
+	height: auto;
+	overflow: hidden;
+	margin: 2em auto;
+	box-shadow:0px 0px 5px 0px rgba(0,0,0,0.5);
+	position: relative;
+}
+
+.cp_slide_item {
+	width: 500px;
+	height: auto;
+	float: left;
+	position: relative;
+}
+.cp_slidewrapper {
+	width: 500%;/* slideの枚数×100% */
+	position: relative;
+	left: 0;
+	animation: slider 16s infinite ease;/* スピード */
+}
+@-webkit-keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	20% {
+	-webkit-transform: translateX(-100px);
+	transform: translateX(-2000px);
+	}
+	40% {
+	-webkit-transform: translateX(-200px);
+	transform: translateX(-1500px);
+	}
+	60% {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-1000px);
+	}
+	80% {
+	-webkit-transform: translateX(-400px);
+	transform: translateX(-500px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
+@keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	20% {
+	-webkit-transform: translateX(-500px);
+	transform: translateX(-500px);
+	}
+	40% {
+	-webkit-transform: translateX(-1000px);
+	transform: translateX(-1000px);
+	}
+	60% {
+	-webkit-transform: translateX(-1500px);
+	transform: translateX(-1500px);
+	}
+	80% {
+	-webkit-transform: translateX(-2000px);
+	transform: translateX(-2000px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
+
+.main-title{
+	text-align: center;
+	width: 200px;
+  font-size: 36px;
+  font-weight: 600;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	color: rgb(47, 45, 45);
+	background-color:blanchedalmond;
+	font-family: 'Oswald', sans-serif;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-family: 'Square Peg', cursive;
+}
+
+
+h1{
+	font-size: 20px;
+	margin: 20px 0px 0px 20px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.sub-title{
+	font-size: 22px;
+	text-align: start;
+	margin: 50px 0px 30px 20px ;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	text-decoration: underline;
+	text-decoration-color: black;
+	border-width: 1px;
+}
+
+h2{
+	font-size: 20px;
+	text-align: start;
+	margin: 50px 0px 30px 30px ;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.profile{
+	width: 80px;
+	height: 80px;
+}
+
+.member{
+	display: block;
+	justify-content:center;
+	margin: 30px 0px 30px 30px;
+	background-color: gray;
+	color: white;
+}
+
+p{
+	font-size: 14px;
+}
+
+h3{
+	font-size: 16px;
+}
+
+.intro{
+	display: flex;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.us{
+	display: block;
+	margin-left: 20px;
+}
+
+.process{
+	display: block;
+}
+
+.coffee-pic{
+	width: 440px;
+	height: auto;
+	border-radius: 10px;
+}
+.process li{
+	font-size: 18px;
+	margin-left: -20px;
+}
+
+.description{
+	margin-left: 10px;
+}
+
+.insta{
+	/* width: 100px;
+	height: 200px; */
+	display: block;
+}
+
+.about{
+	margin-top: 1200px;
+}
+
+footer{
+	font-size: 18px;
+}
+
+
+}
