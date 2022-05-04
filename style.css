@@ -162,7 +162,7 @@ h2{
 .process{
 	display: flex;
 	margin-left: 30px;
-	width: 350px;
+	/* width: 350px; */
 }
 
 .process ul{
@@ -626,4 +626,10 @@ h4{
 	margin: 0px 0px 0px 15px;
 	}
 
+}
+
+@media screen and (min-width: 680px){
+	.sp{
+		display: none;
+	}
 }
