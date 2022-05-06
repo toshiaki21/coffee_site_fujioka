@@ -357,13 +357,15 @@ header{
 	height: auto;
 	margin-left: 0px;
 }
+
 .header-right{
 	margin-right: -50px;
+	transition: right 1s ease;
+position: fixed;
 }
 
-
 .header-right ul{
-  display: flex;
+  display: block;
   color: black;
   margin-right: 60px;
 	font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -623,7 +625,6 @@ h4{
 .post{
 	margin: 0px 0px 0px 15px;
 	}
-
 }
 
 @media screen and (min-width: 680px){
